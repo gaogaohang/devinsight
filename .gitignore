@@ -1,0 +1,19 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+target/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

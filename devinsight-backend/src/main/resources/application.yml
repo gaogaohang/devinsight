@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: devinsight-backend
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/devinsight
+    username: devinsight_user
+    password: devinsight123
+    driver-class-name: org.postgresql.Driver
+    
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  level:
+    root: INFO
+    com.devinsight: DEBUG
+
+jwt:
+  secret: devinsight-secret-key-change-in-production-123456789
+  expiration: 86400000
